@@ -282,6 +282,13 @@
 			<version>${poi.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>DF</groupId>
+			<artifactId>DF</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/lib/DF.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>
