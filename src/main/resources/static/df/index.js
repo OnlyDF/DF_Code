@@ -10,7 +10,7 @@ layer.config({
 $(function() {
     // MetsiMenu
     $('#side-menu').metisMenu();
-
+    console.log("\n %c 大风权限管理系统 %c https://www.baidu.com %c 如有帮助,请邮件lixiaodongdf@163.com！🐤", "color: #fff; font-size: .84rem;background: #366ed8; padding:5px 0;", "font-size: .84rem;background: #fff; border: 2px solid #b0e0a8;border-left: none; padding:3px 0;"," font-size: .84rem;background: #fcf9ec; padding:5px 0;margin-left: 8px");
     //固定菜单栏
     $(function() {
         $('.sidebar-collapse').slimScroll({

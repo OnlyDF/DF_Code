@@ -10,7 +10,7 @@
     <link href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
     <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
     <link href="../static/css/login.min.css" th:href="@{/css/login.min.css}" rel="stylesheet"/>
-    <link href="../static/df/css/ry-ui.css" th:href="@{/df/css/ry-ui.css?v=3.4.0}" rel="stylesheet"/>
+    <link href="../static/df/css/df-ui.css" th:href="@{/df/css/df-ui.css?v=3.4.0}" rel="stylesheet"/>
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
@@ -31,7 +31,7 @@
                         <h1><img alt="[ DF ]" src="../static/df.png" th:src="@{/df.png}"></h1>
                     </div>
                     <div class="m-b"></div>
-                    <h4>欢迎使用 <strong>后台管理系统</strong></h4>
+                    <h4>欢迎使用 <strong>大风后台管理系统</strong></h4>
                     <ul class="m-b">
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> SpringBoot</li>
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Mybatis</li>
@@ -47,7 +47,7 @@
                     <h4 class="no-margins">登录：</h4>
                     <p class="m-t-md">你若不离不弃，我必生死相依</p>
                     <input type="text"     name="username" class="form-control uname"     placeholder="用户名" value="admin"    />
-                    <input type="password" name="password" class="form-control pword"     placeholder="密码"   value="admin123" />
+                    <input type="password" name="password" class="form-control pword"     placeholder="密码"   value="123456" />
 					<div class="row m-t" th:if="${captchaEnabled==true}">
 						<div class="col-xs-6">
 						    <input type="text" name="validateCode" class="form-control code" placeholder="验证码" maxlength="5" autocomplete="off">
@@ -80,7 +80,7 @@
 <script src="../static/ajax/libs/validate/messages_zh.min.js" th:src="@{/ajax/libs/validate/messages_zh.min.js}"></script>
 <script src="../static/ajax/libs/layer/layer.min.js" th:src="@{/ajax/libs/layer/layer.min.js}"></script>
 <script src="../static/ajax/libs/blockUI/jquery.blockUI.js" th:src="@{/ajax/libs/blockUI/jquery.blockUI.js}"></script>
-<script src="../static/df/js/ry-ui.js" th:src="@{/df/js/ry-ui.js?v=3.4.0}"></script>
+<script src="../static/df/js/df-ui.js" th:src="@{/df/js/df-ui.js?v=3.4.0}"></script>
 <script src="../static/df/login.js" th:src="@{/df/login.js}"></script>
 </body>
 </html>
