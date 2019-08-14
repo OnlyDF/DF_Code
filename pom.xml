@@ -5,12 +5,12 @@
 
 	<groupId>com.DF</groupId>
 	<artifactId>DF</artifactId>
-	<version>3.4.0</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 
 	<name>DF</name>
 	<url>http://www.df.vip</url>
-	<description>DF管理系统</description>
+	<description>大风管理系统</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

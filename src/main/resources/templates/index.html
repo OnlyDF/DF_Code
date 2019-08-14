@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>DF系统首页</title>
+    <title>大风系统首页</title>
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html"/>
     <![endif]-->
@@ -15,7 +15,7 @@
     <link th:href="@{/css/animate.css}" rel="stylesheet"/>
     <link th:href="@{/css/style.css}" rel="stylesheet"/>
     <link th:href="@{/css/skins.css}" rel="stylesheet"/>
-    <link th:href="@{/df/css/df-ui.css?v=3.4.0}" rel="stylesheet"/>
+    <link th:href="@{/df/css/df-ui.css?v=1.0.0}" rel="stylesheet"/>
 </head>
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow: hidden" th:classappend="|${@config.getKey('sys.index.sideTheme')} ${@config.getKey('sys.index.skinName')}|">
 <div id="wrapper">
@@ -45,12 +45,12 @@
 				        </div>
 				    </div>
             	</li>
-                 <!--<li class="active" th:href="@{/system/main}">
+                 <li class="active">
                     <a href="index.html"><i class="fa fa-home"></i> <span class="nav-label">主页</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li class="active"><a class="menuItem" th:href="@{/system/main}">主页</a></li>
-                    </ul>&ndash;&gt;
-                </li>-->
+                        <li class="active"><a class="menuItem" th:href="@{/system/main}">了解大风</a></li>
+                    </ul>
+                </li>
                 <li th:each="menu : ${menus}">
                 	<a th:class="@{${menu.url != '' && menu.url != '#'} ? ${menu.target}}" th:href="@{${menu.url == ''} ? |#| : ${menu.url}}">
                 		<i class="fa fa-bar-chart-o" th:class="${menu.icon}"></i>
@@ -170,7 +170,6 @@
                     </a>
                 </div>
                 <ul class="nav navbar-top-links navbar-right welcome-message">
-				    <!--<li><a title="视频教程" href="http://doc.df.vip/#/standard/spjc" target="_blank"><i class="fa fa-video-camera"></i> 视频教程</a></li>-->
                     <li><a title="开发文档" href="http://doc.df.vip" target="_blank"><i class="fa fa-question-circle"></i> 开发文档</a></li>
 	                <li><a title="全屏显示" href="javascript:void(0)" id="fullScreen"><i class="fa fa-arrows-alt"></i> 全屏显示</a></li>
                     <li class="dropdown user-menu">
@@ -232,7 +231,7 @@
 <script th:src="@{/js/jquery.contextMenu.min.js}"></script>
 <script th:src="@{/ajax/libs/blockUI/jquery.blockUI.js}"></script>
 <script th:src="@{/ajax/libs/layer/layer.min.js}"></script>
-<script th:src="@{/df/js/df-ui.js?v=3.4.0}"></script>
+<script th:src="@{/df/js/df-ui.js?v=1.0.0}"></script>
 <script th:src="@{/df/index.js}"></script>
 <script th:src="@{/ajax/libs/fullscreen/jquery.fullscreen.js}"></script>
 <script th:inline="javascript"> 

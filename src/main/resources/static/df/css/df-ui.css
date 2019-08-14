@@ -1,6 +1,6 @@
 /**
  * 通用css样式布局处理
-* Copyright (c) 2019
+ * Copyright (c) 2019
  */
 
 /** 基础通用 **/
@@ -333,6 +333,11 @@ label.error {
 .input-group label.error {
 	z-index:99;
 	right: 42px
+}
+
+.input-group.date label.error {
+	z-index:99;
+	right: 3px
 }
 
 .Validform_error,input.error,select.error {
